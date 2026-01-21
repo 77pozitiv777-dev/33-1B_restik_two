@@ -1,0 +1,16 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Контакты</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+<h1>Контакты</h1>
+<p>Телефон: {{ settings.phone }}</p>
+<p>Email: {{ settings.email }}</p>
+<p>Адрес: {{ settings.address }}</p>
+<a href="{% url 'index' %}">На главную</a>
+</body>
+</html>
